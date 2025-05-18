@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body{
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+    h1{
+        color: #4CAF50;
+    }
+    form{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: auto;
+    }
+    label{
+        font-weight: bold;
+    }
+    input[type="text"]{
+        width: 100%;
+        padding: auto;
+        margin-top: 5px;
+    }
+    input[type="date"],
+    select{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    input[type = "submit"]{
+        padding: auto;
+        margin-top: 5px;
+        background-color:  #5b8fff;
+        color: rgb(255, 255, 255);
+        height: 60%;
+        width: 100%;
+        border-radius: 3px;
+        
+    }
+
+
+</style>
+<body>
+    <h1 align = "Center">Register for the Lecture</h1>
+    <form action="">
+        <label>Name</label>
+        <br>
+        <input type="text">
+        <br>
+        <br>
+        <label>Dob</label>
+        <br>
+        <input type="date">
+        <br>
+        <br>
+        <label>Department</label>
+        <br>
+        <input type="radio" name="department" value="CSE">CSE
+        <input type="radio" name="department" value="IT">IT
+        <input type="radio" name="department" value="ME">ME
+        <input type="radio" name="department" value="CE">CE
+        <input type="radio" name="department" value="EE">EEE
+        <input type="radio" name="department" value="AE">AIDS
+        <br>
+        <br>
+        <label>Year</label>
+        <br>
+        <select name="Year" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+
+        </select>
+        <br>
+        <label>Lecture</label>
+        <br>
+        <select name="Department" id="">
+            <option value="">None</option>
+            <option value="">Quantum Physics</option>
+            <option value="">Computr Network</option>
+            <option value="">Basic of building os</option>
+            <option value="">Building PC</option>
+
+        </select>
+        <br>
+        <input type="submit" value="Submit" class="btn" align="center">
+    </form>
+</body>
+</html>
